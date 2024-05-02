@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MainPanel : MonoBehaviour
@@ -12,11 +13,13 @@ public class MainPanel : MonoBehaviour
 
     [SerializeField] Button logoutButton;
     [SerializeField] Button editButton;
+    [SerializeField] Button startButton;
 
     private void Awake()
     {
         logoutButton.onClick.AddListener(Logout);
         editButton.onClick.AddListener(Edit);
+        startButton.onClick.AddListener(StartGame);
     }
 
     private void OnEnable()
@@ -38,5 +41,10 @@ public class MainPanel : MonoBehaviour
     private void Edit()
     {
         panelController.SetActivePanel(PanelController.Panel.Edit);
+    }
+
+    private void StartGame()
+    {
+        SceneManager.LoadScene("DatabaseScene");
     }
 }

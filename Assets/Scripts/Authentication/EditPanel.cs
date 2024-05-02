@@ -18,13 +18,13 @@ public class EditPanel : MonoBehaviour
 
     private void Awake()
     {
-        nameApplyButton.onClick.AddListener(NameApply);
-        passApplyButton.onClick.AddListener(PassApply);
+        nameApplyButton.onClick.AddListener(ApplyName);
+        passApplyButton.onClick.AddListener(ApplyPassword);
         backButton.onClick.AddListener(Back);
         deleteButton.onClick.AddListener(Delete);
     }
 
-    private void NameApply()
+    private void ApplyName()
     {
         SetInteractable(false);
 
@@ -51,7 +51,7 @@ public class EditPanel : MonoBehaviour
         });
     }
 
-    private void PassApply()
+    private void ApplyPassword()
     {
         SetInteractable(false);
 

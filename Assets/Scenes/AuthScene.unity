@@ -9437,6 +9437,7 @@ MonoBehaviour:
   idText: {fileID: 177500515}
   logoutButton: {fileID: 1480819428}
   editButton: {fileID: 1356078890}
+  startButton: {fileID: 322329542}
 --- !u!114 &1441083692
 MonoBehaviour:
   m_ObjectHideFlags: 0
